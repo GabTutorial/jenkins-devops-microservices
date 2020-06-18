@@ -9,6 +9,8 @@ pipeline {
       stages {	
          stage ('Checkoout'){
             steps {
+              echo "mavenHome $mavenHome"
+              echo "$PATH"
               sh 'docker version'
               sh 'maven --version'
               echo "Build"
