@@ -17,15 +17,16 @@ pipeline {
        	    }
        	 }
       } 
+
       post {
           always {
-            echo "Im the fucking amo"
+            echo 'Im the fucking amo'
           }
           success {
-            echo "I run when is OK"
+            echo 'I run when is OK'
           }
           failure {
-            echo "I run when is KO"
+            echo 'I run when is KO'
           }
       }
  }
